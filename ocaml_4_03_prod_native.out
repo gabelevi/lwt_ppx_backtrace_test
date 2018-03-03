@@ -1,0 +1,6 @@
+Lwt stack trace with sleep:
+Raised at file "test.ml", line 25, characters 0-70
+
+
+Lwt stack trace without sleep:
+Raised at file "test.ml", line 27, characters 18-115

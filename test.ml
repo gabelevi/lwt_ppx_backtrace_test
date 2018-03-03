@@ -13,7 +13,7 @@ let frame1 ~sleep =
   Lwt.return (no_lwt_frame5 ())
 let frame2 ~sleep = let%lwt () = frame1 ~sleep in Lwt.return_unit
 let frame3 ~sleep =
-  frame2 ~sleep;%lwt
+  let%lwt () = frame2 ~sleep in
   Lwt.return_unit
 let frame4 ~sleep = frame3 ~sleep >> Lwt.return_unit
 let frame5 ~sleep = let%lwt () = frame4 ~sleep in Lwt.return_unit
