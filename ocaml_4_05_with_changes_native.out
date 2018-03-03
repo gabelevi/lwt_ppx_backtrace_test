@@ -1,0 +1,35 @@
+Lwt stack trace with sleep:
+Raised at file "pervasives.ml", line 32, characters 17-33
+Called from file "test.ml" (inlined), line 1, characters 14-29
+Called from file "test.ml" (inlined), line 2, characters 23-30
+Called from file "test.ml" (inlined), line 3, characters 23-39
+Called from file "test.ml" (inlined), line 4, characters 23-39
+Called from file "test.ml" (inlined), line 5, characters 23-39
+Called from file "test.ml" (inlined), line 6, characters 23-39
+Called from file "test.ml", line 13, characters 13-31
+Called from file "src/core/lwt.ml", line 1950, characters 23-26
+Re-raised at file "test.ml", line 8, characters 2-117
+Re-raised at file "test.ml", line 14, characters 20-65
+Re-raised at file "test.ml", line 16, characters 2-15
+Re-raised at file "test.ml", line 18, characters 20-33
+Re-raised at file "test.ml", line 19, characters 20-65
+Re-raised at file "test.ml", line 25, characters 0-70
+
+
+Lwt stack trace without sleep:
+Raised at file "pervasives.ml", line 32, characters 17-33
+Called from file "test.ml" (inlined), line 1, characters 14-29
+Called from file "test.ml" (inlined), line 2, characters 23-30
+Called from file "test.ml" (inlined), line 3, characters 23-39
+Called from file "test.ml" (inlined), line 4, characters 23-39
+Called from file "test.ml" (inlined), line 5, characters 23-39
+Called from file "test.ml" (inlined), line 6, characters 23-39
+Called from file "test.ml", line 13, characters 13-31
+Called from file "test.ml", line 14, characters 33-46
+Called from file "test.ml", line 16, characters 2-15
+Called from file "test.ml", line 18, characters 20-33
+Called from file "test.ml", line 19, characters 33-46
+Called from file "src/core/lwt.ml", line 2222, characters 16-20
+Re-raised at file "test.ml", line 25, characters 0-70
+Re-raised at file "test.ml", line 25, characters 0-70
+Re-raised at file "test.ml", line 27, characters 18-115
