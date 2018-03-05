@@ -1,3 +1,5 @@
 _build
 test.native
 test.d.byte
+reraise.native
+reraise.d.byte
